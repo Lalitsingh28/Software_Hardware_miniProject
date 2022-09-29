@@ -9,17 +9,21 @@ public class EngineerComplainDTO {
 	private int EComplainId;
 	private String EComplain;
 	
+	private String ComplainStatus;
+	
 	public EngineerComplainDTO() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public EngineerComplainDTO(int eNId, String eNName, String eNCategory, int eComplainId, String eComplain) {
+	public EngineerComplainDTO(int eNId, String eNName, String eNCategory, int eComplainId, String eComplain,
+			String complainStatus) {
 		super();
 		ENId = eNId;
 		ENName = eNName;
 		ENCategory = eNCategory;
 		EComplainId = eComplainId;
 		EComplain = eComplain;
+		ComplainStatus = complainStatus;
 	}
 
 	public int getENId() {
@@ -62,11 +66,22 @@ public class EngineerComplainDTO {
 		EComplain = eComplain;
 	}
 
+	public String getComplainStatus() {
+		return ComplainStatus;
+	}
+
+	public void setComplainStatus(String complainStatus) {
+		ComplainStatus = complainStatus;
+	}
+
 	@Override
 	public String toString() {
 		return "EngineerComplainDTO [ENId=" + ENId + ", ENName=" + ENName + ", ENCategory=" + ENCategory
-				+ ", EComplainId=" + EComplainId + ", EComplain=" + EComplain + "]";
+				+ ", EComplainId=" + EComplainId + ", EComplain=" + EComplain + ", ComplainStatus=" + ComplainStatus
+				+ "]";
 	}
+
+	
 	
 	
 }
