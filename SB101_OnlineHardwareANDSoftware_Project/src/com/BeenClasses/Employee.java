@@ -6,8 +6,6 @@ public class Employee {
 	private String EName;
 	private String EEmail;
 	private String EPassword;
-	private String EComplain;
-	private int EComplainId;
 	
 	
 
@@ -17,14 +15,12 @@ public class Employee {
 
 
 
-	public Employee(int eId, String eName, String eEmail, String ePassword, String eComplain, int eComplainId) {
+	public Employee(int eId, String eName, String eEmail, String ePassword) {
 		super();
 		EId = eId;
 		EName = eName;
 		EEmail = eEmail;
 		EPassword = ePassword;
-		EComplain = eComplain;
-		EComplainId = eComplainId;
 	}
 
 
@@ -77,35 +73,14 @@ public class Employee {
 
 
 
-	public String getEComplain() {
-		return EComplain;
-	}
-
-
-
-	public void setEComplain(String eComplain) {
-		EComplain = eComplain;
-	}
-
-
-
-	public int getEComplainId() {
-		return EComplainId;
-	}
-
-
-
-	public void setEComplainId(int eComplainId) {
-		EComplainId = eComplainId;
-	}
-
-
-
 	@Override
 	public String toString() {
-		return "Employee [EId=" + EId + ", EName=" + EName + ", EEmail=" + EEmail + ", EPassword=" + EPassword
-				+ ", EComplain=" + EComplain + ", EComplainId=" + EComplainId + "]";
+		return "Employee [EId=" + EId + ", EName=" + EName + ", EEmail=" + EEmail + ", EPassword=" + EPassword + "]";
 	}
+
+
+
+	
 	
 	
 }

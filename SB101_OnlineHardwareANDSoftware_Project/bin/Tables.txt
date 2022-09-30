@@ -1,0 +1,65 @@
+
+
+create table HOD
+(
+HODName varchar(20) Not Null,
+Address varchar(20) Not Null,
+HODEmail varchar(30) Not Null,
+HODPassword varchar(20) Not Null
+);
+
+
+create table Employee
+(
+EId int unique,
+EName varchar(20) primary key,
+EEmail varchar(30) unique,
+EPassword varchar(20) Not Null
+);
+
+create table Engineer
+(
+ENId int unique,
+ENName varchar(20)primary key,
+ENEmail varchar(30) unique,
+ENNPassword varchar(20) Not Null,
+ENCategory varchar(30)
+);
+
+create table Complain
+(
+ComplainId int AUTO_INCREMENT primary key,
+CName varchar(20),
+Catagory varchar(20)Not NUll,
+foreign key (CName) references Employee(EName)
+);
+
+
+
+
+
+create table EngineerComplainDTO
+(
+ENId int,
+ENName varchar(20),
+ENCategory varchar(30),
+EComplainId int,
+ComplainStatus varchar(30),
+foreign key (ENName) references Engineer(ENName),
+foreign key (EComplainId) references Complain(ComplainId)	
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

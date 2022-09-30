@@ -3,15 +3,17 @@ package com.BeenClasses;
 public class Complain {
 	
 	private int ComplainId;
+	private String CName;
 	private String Catagory;
 	
 	public Complain() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Complain(int complainId, String catagory) {
+	public Complain(int complainId, String cName, String catagory) {
 		super();
 		ComplainId = complainId;
+		CName = cName;
 		Catagory = catagory;
 	}
 
@@ -21,6 +23,14 @@ public class Complain {
 
 	public void setComplainId(int complainId) {
 		ComplainId = complainId;
+	}
+
+	public String getCName() {
+		return CName;
+	}
+
+	public void setCName(String cName) {
+		CName = cName;
 	}
 
 	public String getCatagory() {
@@ -33,9 +43,9 @@ public class Complain {
 
 	@Override
 	public String toString() {
-		return "Complain [ComplainId=" + ComplainId + ", Catagory=" + Catagory + "]";
+		return "Complain [ComplainId=" + ComplainId + ", CName=" + CName + ", Catagory=" + Catagory + "]";
 	}
-	
+
 	
 
 }

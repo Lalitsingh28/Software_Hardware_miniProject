@@ -4,8 +4,8 @@ public class Engineer {
 	
 	private int ENId;
 	private String ENName;
+	private String ENEmail;
 	private String ENNPassword;
-	private int ENComplainId;
 	private String ENCategory;
 	
 
@@ -14,12 +14,12 @@ public class Engineer {
 	}
 
 
-	public Engineer(int eNId, String eNName, String eNNPassword, int eNComplainId, String eNCategory) {
+	public Engineer(int eNId, String eNName, String eNEmail, String eNNPassword, String eNCategory) {
 		super();
 		ENId = eNId;
 		ENName = eNName;
+		ENEmail = eNEmail;
 		ENNPassword = eNNPassword;
-		ENComplainId = eNComplainId;
 		ENCategory = eNCategory;
 	}
 
@@ -44,6 +44,16 @@ public class Engineer {
 	}
 
 
+	public String getENEmail() {
+		return ENEmail;
+	}
+
+
+	public void setENEmail(String eNEmail) {
+		ENEmail = eNEmail;
+	}
+
+
 	public String getENNPassword() {
 		return ENNPassword;
 	}
@@ -54,14 +64,7 @@ public class Engineer {
 	}
 
 
-	public int getENComplainId() {
-		return ENComplainId;
-	}
-
-
-	public void setENComplainId(int eNComplainId) {
-		ENComplainId = eNComplainId;
-	}
+	
 
 
 	public String getENCategory() {
@@ -76,9 +79,14 @@ public class Engineer {
 
 	@Override
 	public String toString() {
-		return "Engineer [ENId=" + ENId + ", ENName=" + ENName + ", ENNPassword=" + ENNPassword + ", ENComplainId="
-				+ ENComplainId + ", ENCategory=" + ENCategory + "]";
+		return "Engineer [ENId=" + ENId + ", ENName=" + ENName + ", ENEmail=" + ENEmail + ", ENNPassword=" + ENNPassword
+				+ ", ENCategory=" + ENCategory + "]";
 	}
+
+
+	
+
+
 	
 	
 }

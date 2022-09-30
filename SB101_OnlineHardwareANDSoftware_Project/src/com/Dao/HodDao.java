@@ -2,6 +2,7 @@ package com.Dao;
 
 import java.util.List;
 
+import com.BeenClasses.Complain;
 import com.BeenClasses.Engineer;
 import com.BeenClasses.EngineerComplainDTO;
 import com.Exceptions.ComplainException;
@@ -17,9 +18,9 @@ public interface HodDao {
 	
 	public String removeEngineer(int enId);
 	
-	public List<EngineerComplainDTO> getAllComplain()throws ComplainException;
+	public List<Complain> getAllComplain()throws ComplainException;
 	
-	public String assignComplain(int eComplainId);
+	public String assignComplain(int enid,String enname,String cat,int cid,String sts);
 	
 	
 	
