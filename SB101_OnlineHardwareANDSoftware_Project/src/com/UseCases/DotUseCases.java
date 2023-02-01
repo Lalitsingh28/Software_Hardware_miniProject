@@ -91,16 +91,7 @@ public class DotUseCases {
 			  break;
 			  
 		  case 6:
-			  break;
-			  
-		}
-		
-		
+			  break;	  
+		}	
 	}
-	
-	
-	
-	
-	
-
 }
