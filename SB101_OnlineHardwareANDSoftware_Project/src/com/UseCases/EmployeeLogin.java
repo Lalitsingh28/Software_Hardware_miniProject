@@ -27,9 +27,6 @@ public class EmployeeLogin {
 			e.printStackTrace();
 		}
 		
-		
-		EmployeeUseCasses.optionsEmployee();
-		
+		EmployeeUseCasses.optionsEmployee();	
 	}
-
 }
