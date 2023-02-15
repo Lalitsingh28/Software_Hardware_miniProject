@@ -23,7 +23,6 @@ public class EmployeeLogin {
 			String result = hd.logInEmployee(uname, pass);
 			System.out.println(result);
 		} catch (EmployeeException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
