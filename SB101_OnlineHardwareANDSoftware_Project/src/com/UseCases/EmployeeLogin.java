@@ -13,7 +13,6 @@ public class EmployeeLogin {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Username:");
 		String uname = sc.next();
-		
 		System.out.println("Enter Password:");
 		String pass = sc.next();
 		
