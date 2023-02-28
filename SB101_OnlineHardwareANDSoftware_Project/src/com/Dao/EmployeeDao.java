@@ -15,13 +15,12 @@ public interface EmployeeDao {
     
     public String logInEmployee(String usersName, String Password)throws EmployeeException;
     
-	public String registerComplain(String cname,String com);
+    public String registerComplain(String cname,String com);
 	
-	public List<EngineerComplainDTO> checkComplainStatus(int eComplainId)throws ComplainException;
+    public List<EngineerComplainDTO> checkComplainStatus(int eComplainId)throws ComplainException;
 	
-	public List<Complain> getComplainByEmployee(String eName);
+    public List<Complain> getComplainByEmployee(String eName);
 	
-	public String changePassword(int ep,String p);
-	
-	
+    public String changePassword(int ep,String p);
+		
 }
